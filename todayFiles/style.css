@@ -1,8 +1,15 @@
 /*global html elements*/
 
+
+/*fonts
+font-family: 'Press Start 2P', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'Permanent Marker', sans-serif;
+font-family: 'Comfortaa', cursive;
+
+*/
+
 html {
-  background-color: #000;
-  color: white;
   font-size: 16px;
 }
 
@@ -19,8 +26,10 @@ h1 {
   width: 37rem;
 }
 
-#page {
+#TODAY {
   display: flex;
+  background-color: #000;
+  color: white;
 }
 
 
@@ -29,10 +38,11 @@ h1 {
 #navigation {
   width: 15rem;
   font-size: .65rem;
-  padding-top: 3.5rem;
+  padding-top: 4.5rem;
   padding-right: 1rem;
   margin-right: 6rem;
   display: flex;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .tomorrow {
@@ -43,7 +53,7 @@ h1 {
 }
 
 .today {
-  text-decoration: line-through;
+  text-decoration: underline;
   color: #F70A9C;
   padding-left: 1rem;
   font-size: .8rem;
@@ -52,66 +62,75 @@ h1 {
 
 /*main section*/
 
-#title {
-  margin-top: 1.5rem;
+#TODAY-title {
+  margin-top: 2.5rem;
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.light-bar {
+.TODAY-light-bar {
   height: 3px;
   background-color: #F70A9C;
   width: 70%;
   box-shadow: 0px 0px 15px #F70A9C;
 }
 
-#key-content {
+#TODAY-key-content {
   display: flex;
   justify-content: space-between;
 }
 
-#type-content {
+#TODAY-type-content {
   width: 32%;
   margin-right: 5rem;
 }
 
-#type-content h2 {
-  font-size: 1.2rem;
+#TODAY-type-content h2 {
+  font-size: 1.5rem;
   font-weight: bolder;
   margin-bottom: .8rem;
   margin-top: 3rem;
+  font-family: 'Press Start 2P', cursive;
 }
 
-#type-content h3 {
+#TODAY-type-content h3 {
   font-size: 1rem;
   font-weight: bolder;
   margin-bottom: .8rem;
   margin-top: 3rem;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .name {
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: bolder;
   margin-bottom: 2rem;
   font-style: italic;
+  font-family: 'Comfortaa', cursive;
 }
 
-#type-content .fa {
+#name {
+  text-decoration: none;
+  color: #fff;
+}
+
+#TODAY-type-content .fa {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
   color: #fff;
 }
 
-#type-content p {
-  font-size: .85rem;
+#TODAY-type-content p {
+  font-size: .8rem;
   line-height: 1.6;
   text-align: justify;
+  font-family: 'Comfortaa', cursive;
 }
 
-#type-content ul {
+#TODAY-type-content ul {
   font-size: .8rem;
   line-height: 1.4;
 }
@@ -121,9 +140,10 @@ h1 {
   line-height: 1.6;
   text-decoration: none;
   color: #00A3EC;
+  font-family: 'Comfortaa', cursive;
 }
 
-#quote {
+#TODAY-quote {
   display: flex;
   width: 45%;
   font-family: 'Permanent Marker', sans-serif;
@@ -131,7 +151,7 @@ h1 {
   /*margin-right: 2rem;*/
 }
 
-#quote p {
+#TODAY-quote p {
   text-align: right;
   font-size: 5rem;
   line-height: 1.1;
@@ -139,7 +159,7 @@ h1 {
   color: #00A3EC;
   /* - blue
   /*color: #F70A9C;/* - pink*/
-  opacity: .35;
+  opacity: .20;
 }
 
 #imagery img {
@@ -147,23 +167,24 @@ h1 {
   height: auto;
 }
 
-#bottom {
+#TODAY-bottom {
   width: 100%;
   margin-top: 4 rem;
 }
 
-#bottom h3 {
+#TODAY-bottom h3 {
   font-size: 1rem;
   font-weight: bolder;
   margin-bottom: 3rem;
   margin-top: 5rem;
   display: block;
+  font-family: 'Press Start 2P', cursive;
 }
 
 
 /*image containers section*/
 
-#key-interests {
+#TODAY-key-interests {
   display: flex;
   justify-content: space-between;
   margin-right: 2rem;
@@ -213,11 +234,11 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  font-family: 'Press Start 2P', cursive;
 }
 
 .image-description a {
   color: #fff;
-  text-decoration: line-through;
 }
 
 footer {
@@ -228,11 +249,12 @@ footer {
 footer h3 {
   font-size: .7rem;
   margin-top: .5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   text-align: center;
+  font-family: 'Press Start 2P', cursive;
 }
 
-#contact-elements {
+#TODAY-contact-elements {
   display: flex;
   justify-content: center;
 }
