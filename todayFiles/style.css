@@ -17,25 +17,22 @@ div {}
 
 p {}
 
-h1 {
-  font-size: 4.5rem;
-  font-weight: 600;
-  color: #F70A9C;
-  text-shadow: #F70A9C 0 0 15px;
-  font-family: 'Permanent Marker', sans-serif;
-  width: 37rem;
-}
-
 #TODAY {
   display: flex;
   background-color: #000;
   color: white;
 }
 
-test
-/*navigation*/
+#TOMORROW {
+  display: flex;
+  background-color: #FFF;
+  color: #000;
+}
 
-#navigation {
+
+/*TODAY navigation*/
+
+#TODAY-navigation {
   width: 15rem;
   font-size: .65rem;
   padding-top: 4.5rem;
@@ -45,14 +42,14 @@ test
   font-family: 'Press Start 2P', cursive;
 }
 
-.tomorrow {
+.TODAY-tomorrow-link {
   text-decoration: none;
   color: #fff;
   padding-left: 1rem;
   font-size: .8rem;
 }
 
-.today {
+.TODAY-today-link {
   text-decoration: underline;
   color: #F70A9C;
   padding-left: 1rem;
@@ -60,7 +57,35 @@ test
 }
 
 
-/*main section*/
+/*TOMORROW navigation*/
+
+#TOMORROW-navigation {
+  width: 25rem;
+  font-size: .65rem;
+  padding-top: 4.5rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.TOMORROW-tomorrow-link {
+  text-decoration: underline;
+  color: #00A3EC;
+  padding-left: 1rem;
+  font-size: .8rem;
+}
+
+.TOMORROW-today-link {
+  text-decoration: none;
+  color: #000;
+  padding-left: 1rem;
+  font-size: .8rem;
+}
+
+
+/*TODAY main section*/
 
 #TODAY-title {
   margin-top: 2.5rem;
@@ -68,6 +93,15 @@ test
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#TODAY-title-h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #F70A9C;
+  text-shadow: #F70A9C 0 0 15px;
+  font-family: 'Permanent Marker', sans-serif;
+  width: 37rem;
 }
 
 .TODAY-light-bar {
@@ -103,7 +137,7 @@ test
   font-family: 'Press Start 2P', cursive;
 }
 
-.name {
+.TODAY-name {
   font-size: 1rem;
   font-weight: bolder;
   margin-bottom: 2rem;
@@ -155,16 +189,8 @@ test
   text-align: right;
   font-size: 5rem;
   line-height: 1.1;
-  /*color: #262a2c;/* - black*/
   color: #00A3EC;
-  /* - blue
-  /*color: #F70A9C;/* - pink*/
   opacity: .20;
-}
-
-#imagery img {
-  max-width: 85%;
-  height: auto;
 }
 
 #TODAY-bottom {
@@ -182,9 +208,129 @@ test
 }
 
 
-/*image containers section*/
+/*TOMORROW main section*/
 
-#TODAY-key-interests {
+#TOMORROW-title {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#TOMORROW-title-h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #00A3EC;
+  text-shadow: #00A3EC 0 0 15px;
+  font-family: 'Permanent Marker', sans-serif;
+  width: 37rem;
+  margin-left: 1rem;
+}
+
+.TOMORROW-light-bar {
+  height: 3px;
+  background-color: #00A3EC;
+  width: 70%;
+  box-shadow: 0px 0px 15px #00A3EC;
+}
+
+#TOMORROW-key-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#TOMORROW-type-content {
+  width: 32%;
+  text-align: right;
+}
+
+#TOMORROW-type-content h2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-bottom: .8rem;
+  margin-top: 3rem;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#TOMORROW-type-content h3 {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-bottom: .8rem;
+  margin-top: 3rem;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.TOMORROW-name {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  font-style: italic;
+  font-family: 'Comfortaa', cursive;
+}
+
+#TOMORROW-name {
+  text-decoration: none;
+  color: #000;
+}
+
+#TOMORROW-empire {
+  background-color: #000;
+}
+
+#TOMORROW-type-content .fa {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+#TOMORROW-type-content p {
+  font-size: .8rem;
+  line-height: 1.6;
+  text-align: justify;
+  font-family: 'Comfortaa', cursive;
+}
+
+#TOMORROW-type-content ul {
+  font-size: .8rem;
+  line-height: 1.4;
+}
+
+#TOMORROW-quote {
+  display: flex;
+  width: 35%;
+  font-family: 'Permanent Marker', sans-serif;
+  margin-top: 2rem;
+}
+
+#TOMORROW-quote p {
+  text-align: left;
+  font-size: 5rem;
+  line-height: 1.1;
+  color: #F70A9C;
+  opacity: .20;
+}
+
+#TOMORROW-bottom {
+  width: 100%;
+  margin-top: 4 rem;
+  text-align: right;
+}
+
+#TOMORROW-bottom h3 {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  display: block;
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+/*GLOBAL IMAGES SECTION*/
+
+#key-interests {
   display: flex;
   justify-content: space-between;
   margin-right: 2rem;
@@ -241,6 +387,9 @@ test
   color: #fff;
 }
 
+
+/*GLOBAL FOOTER*/
+
 footer {
   background-color: #F70A9C;
   padding-top: 1rem;
@@ -254,7 +403,7 @@ footer h3 {
   font-family: 'Press Start 2P', cursive;
 }
 
-#TODAY-contact-elements {
+#contact-elements {
   display: flex;
   justify-content: center;
 }
