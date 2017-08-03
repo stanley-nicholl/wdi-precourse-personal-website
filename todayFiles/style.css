@@ -1,0 +1,245 @@
+/*global html elements*/
+
+html {
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+}
+
+div {}
+
+p {}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #F70A9C;
+  text-shadow: #F70A9C 0 0 15px;
+  font-family: 'Permanent Marker', sans-serif;
+  width: 37rem;
+}
+
+#page {
+  display: flex;
+}
+
+
+/*navigation*/
+
+#navigation {
+  width: 15rem;
+  font-size: .65rem;
+  padding-top: 3.5rem;
+  padding-right: 1rem;
+  margin-right: 6rem;
+  display: flex;
+}
+
+.tomorrow {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 1rem;
+  font-size: .8rem;
+}
+
+.today {
+  text-decoration: line-through;
+  color: #F70A9C;
+  padding-left: 1rem;
+  font-size: .8rem;
+}
+
+
+/*main section*/
+
+#title {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.light-bar {
+  height: 3px;
+  background-color: #F70A9C;
+  width: 70%;
+  box-shadow: 0px 0px 15px #F70A9C;
+}
+
+#key-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#type-content {
+  width: 32%;
+  margin-right: 5rem;
+}
+
+#type-content h2 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-bottom: .8rem;
+  margin-top: 3rem;
+}
+
+#type-content h3 {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-bottom: .8rem;
+  margin-top: 3rem;
+}
+
+.name {
+  font-size: .9rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+#type-content .fa {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+#type-content p {
+  font-size: .85rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+#type-content ul {
+  font-size: .8rem;
+  line-height: 1.4;
+}
+
+.inspiration a {
+  font-size: .8rem;
+  line-height: 1.6;
+  text-decoration: none;
+  color: #00A3EC;
+}
+
+#quote {
+  display: flex;
+  width: 45%;
+  font-family: 'Permanent Marker', sans-serif;
+  margin-top: 2rem;
+  /*margin-right: 2rem;*/
+}
+
+#quote p {
+  text-align: right;
+  font-size: 5rem;
+  line-height: 1.1;
+  /*color: #262a2c;/* - black*/
+  color: #00A3EC;
+  /* - blue
+  /*color: #F70A9C;/* - pink*/
+  opacity: .35;
+}
+
+#imagery img {
+  max-width: 85%;
+  height: auto;
+}
+
+#bottom {
+  width: 100%;
+  margin-top: 4 rem;
+}
+
+#bottom h3 {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  display: block;
+}
+
+
+/*image containers section*/
+
+#key-interests {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+}
+
+.interest-container {
+  position: relative;
+  width: 30%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+#deathtrooper {
+  background-color: #101111;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00A3EC;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 3px;
+}
+
+.interest-container:hover .overlay {
+  height: 100%;
+}
+
+.image-description {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.image-description a {
+  color: #fff;
+  text-decoration: line-through;
+}
+
+footer {
+  background-color: #F70A9C;
+  padding-top: 1rem;
+}
+
+footer h3 {
+  font-size: .7rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#contact-elements {
+  display: flex;
+  justify-content: center;
+}
+
+footer .fa {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
