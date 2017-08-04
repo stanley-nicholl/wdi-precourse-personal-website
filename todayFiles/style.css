@@ -13,9 +13,20 @@ html {
   font-size: 16px;
 }
 
-div {}
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 13px;
+  }
+}
 
-p {}
+@media only screen and (max-width: 1070px) {
+  html {
+    font-size: 11px;
+  }
+  #TODAY-type-content p {
+    font-size: 11px;
+  }
+}
 
 #TODAY-TOMORROW-PAGE {}
 
@@ -113,12 +124,13 @@ p {}
 }
 
 #TODAY-title-h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 600;
   color: #F70A9C;
   text-shadow: #F70A9C 0 0 15px;
   font-family: 'Permanent Marker', sans-serif;
   width: 37rem;
+  flex-shrink: 0
 }
 
 .TODAY-light-bar {
@@ -139,7 +151,7 @@ p {}
 }
 
 #TODAY-type-content h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   margin-bottom: .8rem;
   margin-top: 3rem;
@@ -147,7 +159,7 @@ p {}
 }
 
 #TODAY-type-content h3 {
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: bolder;
   margin-bottom: .8rem;
   margin-top: 3rem;
@@ -172,6 +184,7 @@ p {}
   margin-right: 1rem;
   margin-bottom: 1rem;
   color: #fff;
+  flex-shrink: 0;
 }
 
 #TODAY-type-content p {
@@ -179,6 +192,7 @@ p {}
   line-height: 1.6;
   text-align: justify;
   font-family: 'Comfortaa', cursive;
+  flex-shrink: 0;
 }
 
 #TODAY-type-content ul {
@@ -204,7 +218,7 @@ p {}
 
 #TODAY-quote p {
   text-align: right;
-  font-size: 5rem;
+  font-size: 4.5rem;
   line-height: 1.1;
   color: #00A3EC;
   opacity: .20;
@@ -236,7 +250,7 @@ p {}
 }
 
 #TOMORROW-title-h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 600;
   color: #00A3EC;
   text-shadow: #00A3EC 0 0 15px;
@@ -244,6 +258,7 @@ p {}
   width: 37rem;
   margin-left: 1rem;
   text-align: right;
+  flex-shrink: 0;
 }
 
 .TOMORROW-light-bar {
@@ -261,10 +276,11 @@ p {}
 #TOMORROW-type-content {
   width: 32%;
   text-align: right;
+  flex-shrink: 0;
 }
 
 #TOMORROW-type-content h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   margin-bottom: .8rem;
   margin-top: 3rem;
@@ -272,7 +288,7 @@ p {}
 }
 
 #TOMORROW-type-content h3 {
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: bolder;
   margin-bottom: .8rem;
   margin-top: 3rem;
@@ -329,14 +345,14 @@ p {}
 
 #TOMORROW-quote {
   display: flex;
-  width: 35%;
+  width: 30%;
   font-family: 'Permanent Marker', sans-serif;
   margin-top: 2rem;
 }
 
 #TOMORROW-quote p {
   text-align: left;
-  font-size: 5rem;
+  font-size: 4.4rem;
   line-height: 1.1;
   color: #F70A9C;
   opacity: .20;
@@ -430,6 +446,7 @@ p {}
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
 }
 
 .image-description a {
