@@ -17,10 +17,27 @@ div {}
 
 p {}
 
+#TODAY-TOMORROW-PAGE {}
+
+#TODAY-FULL-PAGE {
+  position: relative;
+  display: inline;
+  z-index: 10;
+}
+
+#TOMORROW-FULL-PAGE {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: inline;
+  z-index: 1;
+}
+
 #TODAY {
   display: flex;
   background-color: #000;
   color: white;
+  position: relative;
 }
 
 #TOMORROW {
@@ -60,7 +77,7 @@ p {}
 /*TOMORROW navigation*/
 
 #TOMORROW-navigation {
-  width: 25rem;
+  width: 45rem;
   font-size: .65rem;
   padding-top: 4.5rem;
   padding-right: 1rem;
@@ -169,7 +186,7 @@ p {}
   line-height: 1.4;
 }
 
-.inspiration a {
+.TODAY-inspiration a {
   font-size: .8rem;
   line-height: 1.6;
   text-decoration: none;
@@ -226,6 +243,7 @@ p {}
   font-family: 'Permanent Marker', sans-serif;
   width: 37rem;
   margin-left: 1rem;
+  text-align: right;
 }
 
 .TOMORROW-light-bar {
@@ -264,7 +282,7 @@ p {}
 .TOMORROW-name {
   font-size: 1rem;
   font-weight: bolder;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-style: italic;
   font-family: 'Comfortaa', cursive;
 }
@@ -292,9 +310,21 @@ p {}
   font-family: 'Comfortaa', cursive;
 }
 
+.digi-carpenter {
+  font-style: italic;
+}
+
 #TOMORROW-type-content ul {
   font-size: .8rem;
   line-height: 1.4;
+}
+
+.TOMORROW-inspiration a {
+  font-size: .8rem;
+  line-height: 1.6;
+  text-decoration: none;
+  color: #F70A9C;
+  font-family: 'Comfortaa', cursive;
 }
 
 #TOMORROW-quote {
@@ -330,10 +360,9 @@ p {}
 
 /*GLOBAL IMAGES SECTION*/
 
-#key-interests {
+.key-interests {
   display: flex;
   justify-content: space-between;
-  margin-right: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -353,7 +382,7 @@ p {}
   background-color: #101111;
 }
 
-.overlay {
+.TODAY-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -366,7 +395,27 @@ p {}
   border-radius: 3px;
 }
 
-.interest-container:hover .overlay {
+.interest-container:hover .TODAY-overlay {
+  height: 100%;
+}
+
+
+/*SPECIAL INSERT FOR GLOBAL IMAGES - OVERLAY COLOR CHANGE FOR "TOMORROW"*/
+
+.TOMORROW-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F70A9C;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 3px;
+}
+
+.interest-container:hover .TOMORROW-overlay {
   height: 100%;
 }
 
@@ -400,6 +449,7 @@ footer h3 {
   margin-top: .5rem;
   margin-bottom: 1.2rem;
   text-align: center;
+  color: #fff;
   font-family: 'Press Start 2P', cursive;
 }
 
