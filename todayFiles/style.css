@@ -184,7 +184,6 @@ html {
   margin-right: 1rem;
   margin-bottom: 1rem;
   color: #fff;
-  flex-shrink: 0;
 }
 
 #TODAY-type-content p {
@@ -192,7 +191,6 @@ html {
   line-height: 1.6;
   text-align: justify;
   font-family: 'Comfortaa', cursive;
-  flex-shrink: 0;
 }
 
 #TODAY-type-content ul {
@@ -276,7 +274,6 @@ html {
 #TOMORROW-type-content {
   width: 32%;
   text-align: right;
-  flex-shrink: 0;
 }
 
 #TOMORROW-type-content h2 {
